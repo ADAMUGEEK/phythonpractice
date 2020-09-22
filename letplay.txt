@@ -1,0 +1,2 @@
+import math
+math.log(64,2)
