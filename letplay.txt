@@ -1,2 +1,4 @@
 import math
 math.log(64,2)
+#continues of phyton programming
+print("let do it")
