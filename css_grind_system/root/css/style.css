@@ -1,0 +1,21 @@
+*{
+    margin: 10px;
+    padding: 5px;
+}
+.container{ 
+    display: grid;
+    grid: 20px 20px  / 35px 35px;
+       
+}
+.container div{
+         border:green ;
+    }
+.container-inline{
+    display: inline-grid;
+    border: khaki;
+   
+}
+.container-inline div{
+    border:green solid 2px;
+
+}
