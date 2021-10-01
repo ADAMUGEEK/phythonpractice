@@ -1,0 +1,23 @@
+Linux distributions can start and stop the graphical desktop in various ways. The exact method differs from distribution and among distribution versions. For the newer systemd-based distributions, the display manager is run as a service, you can stop the GUI desktop with the systemctl utility and most distributions will also work with the telinit command, as in:
+
+$ sudo systemctl stop gdm (or sudo telinit 3)
+
+and restart it (after logging into the console) with:
+
+$ sudo systemctl start gdm (or sudo telinit 5)
+
+On Ubuntu versions before 18.04 LTS, substitute lightdm for gdm.
+
+Methods of bringing down the GUI:
+student:/tmp> sudo systemctl stop gdm
+student:/tmp> sudo systemctl stop lightdm
+student:/tmp> sudo telinit 3
+      
+Methods of bringing the GUI back up:
+student:/tmp> sudo systemctl start gdm
+student:/tmp> sudo systemctl start lightdm
+student:/tmp> sudo telinit 5
+     
+     An available text terminal will prompt for a username (with the string login:) and password. When typing your password, nothing is displayed on the terminal (not even a * to indicate that you typed in something), to prevent others from seeing your password. After you have logged into the system, you can perform basic operations.
+
+Once your session is started (either by logging into a text terminal or via a graphical terminal program), you can also connect and log into remote systems by using Secure SHell (SSH). For example, by typing ssh student@remote-server.com, SSH would connect securely to the remote machine (remote-server.com) and give student a command line terminal window, using either a password (as with regular logins) or cryptographic key to sign in without providing a password to verify the identity.
