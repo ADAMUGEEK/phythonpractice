@@ -12,16 +12,32 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <!-- Place favicon.ico in the root directory -->
+<style>
+.green{
+  background: rgba(137, 214, 92, 0.548);
+  color: #fff !important;
+}  
+.text{
+  color: #14b182;
+}
+.border{
+  border: 1px solid #14b182 !important; 
+  
+ 
+}
+  
+
+</style>
 </head>
 <body id="home">
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
-    <div class="container">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-2 ">
+    <div class="container"> 
       <a href="index.html" class="navbar-brand">
-        <img src="img/logo.png" width="50" height="50" alt=""><h3 class="d-inline align-middle">Geeky</h3>
+        <img src="img/logo.png" width="50" height="50" alt="logo"><h3 class="d-inline align-middle">Geeky</h3>
       </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navlist"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navlist">
+        <ul class="navbar-nav ml-auto"> 
           <li class="nav-item">
             <a href="#home" class="nav-link">Home</a>
           </li>
@@ -38,6 +54,85 @@
       </div>
     </div>
   </nav>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <h1 class="display-2 mt-5 pt-5">
+              So What You Dream Of...
+            </h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quas.</p>
+            <a href="#" class="btn btn-outline-secondary btn-lg text-white green">
+              <i class="fa fa-arrow-right"></i> Read More</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/book.png" alt="" class="img-fluid d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control form-control-lg text" placeholder="Enter Name">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control form-control-lg" placeholder="Enter Email">
+        </div>
+        <div class="col-md-4">
+          <button class="btn green btn-lg btn-block"><i class="fa fa-envelope-open-o"></i> Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <section id="boxes" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center border">
+            <div class="card-body">
+              <h3 class="text">Be Better</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center green text-white">
+            <div class="card-body">
+              <h3>Be Smarter</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center border">
+            <div class="card-body">
+              <h3 class="text">Be Faster</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center green text-white">
+            <div class="card-body">
+              <h3>Be Stronger</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
